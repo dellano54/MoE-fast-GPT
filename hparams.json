@@ -1,0 +1,19 @@
+{
+    "max_length": 512,
+    "lr" : 2e-4,
+    "weight_decay": 1e-1,
+    "batch_size": 30,
+    "dataset": "Zyphra/Zyda-2",    
+    "split": "sample-100BT",       
+    "tokenizer": "tokenizer/spm_100k.model",
+    "log_steps" : 1000,
+    "save_path": "model.pt",       
+    "epochs" : 5,
+    "gradient_accumulation": 1,   
+    "device": "cuda",
+    "early_stopping": 0,
+    "dtype": "fp16",
+    "warmpup_steps": 1000,
+    "train_steps": 60000,
+    "min_lr": 6e-5
+}
