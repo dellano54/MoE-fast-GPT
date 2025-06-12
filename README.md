@@ -33,7 +33,7 @@ The model also includes a load balancing loss to ensure expert utilization remai
 ---
 
 ## 📊 Loss Curve
-![Loss Curve](log_curve.png)
+![Loss Curve](loss_curve.png)
 The training loss (smoothed using EMA) is visualized above). The smoother training progression is evidence of stable convergence thanks to pre-norm + MoE + RMSNorm combo.
 
 ---
