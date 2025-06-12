@@ -34,7 +34,7 @@ The model also includes a load balancing loss to ensure expert utilization remai
 
 ## 📊 Loss Curve
 ![Loss Curve](log_curve.png)
-The training loss (smoothed using EMA) is visualized above. Losses were logged at every step and saved in `loss.pkl`. The smoother training progression is evidence of stable convergence thanks to pre-norm + MoE + RMSNorm combo.
+The training loss (smoothed using EMA) is visualized above). The smoother training progression is evidence of stable convergence thanks to pre-norm + MoE + RMSNorm combo.
 
 ---
 
@@ -73,7 +73,6 @@ The model is trained on HuggingFace's streaming `Zyphra/Zyda-2` dataset (sampled
 * `train.py` – Full training pipeline, AMP usage, dataloaders, optimizer, schedulers
 * `tokenizer.py` – SentencePiece-based tokenizer with BOS/EOS support
 * `hparams.json` – Config file with training hyperparameters
-* `loss.pkl` – Raw loss values (saved at every step)
 * `log_curve.png` – Smoothed training loss curve
 
 ---
